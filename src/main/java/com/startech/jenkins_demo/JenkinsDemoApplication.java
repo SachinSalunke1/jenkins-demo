@@ -5,21 +5,22 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import jakarta.annotation.PostConstruct;
+import javax.annotation.PostConstruct;
 
 @SpringBootApplication
 public class JenkinsDemoApplication {
-	
-	private static final Logger LOGGER =LoggerFactory.getLogger(JenkinsDemoApplication.class);
-	
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(JenkinsDemoApplication.class);
+
 	@PostConstruct
 	public void init() {
-		LOGGER.info("Application started.....");
+		LOGGER.info("Application initialized");
 	}
 
 	public static void main(String[] args) {
-		LOGGER.info("Application executed.....");
-		SpringApplication.run(JenkinsDemoApplication.class, args);
+		LOGGER.info("Application Executed");
+		SpringApplication.run(JenkinsDemoApplication.class);
+
 	}
 
 }
