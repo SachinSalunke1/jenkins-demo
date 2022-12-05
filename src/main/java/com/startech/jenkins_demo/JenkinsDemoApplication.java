@@ -15,9 +15,6 @@ public class JenkinsDemoApplication {
 	@PostConstruct
 	public void init() {
 		LOGGER.info("Application initialized");
-		// statement added to fail build
-		//int a = 10 / 0;
-		//LOGGER.info("result of aclculation " + a);
 	}
 
 	public static void main(String[] args) {
